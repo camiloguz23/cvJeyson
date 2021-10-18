@@ -7,11 +7,15 @@ import About from './paginas/about/about';
 function App() {
   return (
     <>
-    <Inicio />
+    <Router>
+      <Switch>
+        <Route exact path="/" component={Inicio}/>
+      </Switch>
+    </Router>
 
     <Router>
       <Switch>
-        <Route exact path="cvJeyson/about_me" component={About}/>
+        <Route exact path="/about_me" component={About}/>
       </Switch>
     </Router>
     </>
