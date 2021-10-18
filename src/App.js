@@ -9,13 +9,13 @@ function App() {
     <>
     <Router>
       <Switch>
-        <Route exact path="/" component={Inicio}/>
+        <Route exact path="/cvJeyson" component={Inicio}/>
       </Switch>
     </Router>
 
     <Router>
       <Switch>
-        <Route exact path="/about_me" component={About}/>
+        <Route exact path="cvJeyson/about_me" component={About}/>
       </Switch>
     </Router>
     </>
