@@ -429,4 +429,19 @@ footer a{
   footer a {
     margin-left: 0%;
   }
+
+  .info img {
+    border-radius: 10px;
+    width: 200px;
+  }
+
+  .info {
+    position: absolute;
+    padding: 20px;
+    background-color: hsla(0, 100%, 0%, 0.9);
+    top: 90%;
+    left: 10%;
+    border-radius: 10px;
+    width: 260px;
+  }
 }

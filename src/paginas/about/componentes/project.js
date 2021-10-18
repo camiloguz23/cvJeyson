@@ -9,12 +9,15 @@ const Project = () => {
             <h3  className="title_project">Projects</h3>
         </div>
         <div className="used_project">
-            <Contect title = "Form in React"messages="The Form was created with React JS, where it can validate datas user that input and if the datas is correct, it going to show a message" link="https://github.com/camiloguz23/React-Formulario" />
+            <Contect title = "Form in React"messages="The Form was created with React JS, where it can validate datas user that input and if the datas is correct, it going to show a message" link="https://github.com/camiloguz23/React-Formulario"
+            image_one="https://i.ibb.co/J5nyBZ2/formulario-react.png"
+            pages="https://camiloguz23.github.io/ReactFormulario/"
+             />
             <Contect title="piedra,papel y tijera"
                 messages="This game was created in Javascript and used DOM,"
                 link="https://github.com/camiloguz23/juegoPPT"
                 image_one = "https://i.ibb.co/48kLnwK/PPT.png"
-                pages="https://salty-tundra-67893.herokuapp.com/"
+                pages="https://camiloguz23.github.io/juegoPPT/"
             />
             <Contect title="Pig game" 
                 messages="This is game for two players where the winner is who complete first doing the sum of the points of games, it playing with dices"
