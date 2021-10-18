@@ -1,38 +1,432 @@
-.App {
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  
+}
+
+header {
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 70px;
+  padding: 16px;
+}
+
+h1 {
+  width: 30%;
+}
+
+.foto {
+  margin: 10px;
+  border-radius: 10px;
+  width: 120px;
+}
+
+.video {
+  margin-left: 155px;
+  margin-top: -30px;
+}
+
+.video video {
+  width: 900px;
+  height: 600px;
+}
+
+.menu {
+  margin-left: 450px;
+  display: flex;
+  justify-content: space-evenly;
+  width: 320px;
+  
+}
+
+.menu a {
+  text-decoration: none;
+  color: white;
+  width:90px;
   text-align: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.menu a:hover{
+  background-color: white;
+  color: black;
+  border-radius: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.fondo_negro {
+  width: 900px;
+  height: 510px;
+  background-color: hsla(0, 100%, 0%, 0.5);
+  position: absolute;
+  top: 13%;
+  left: 158px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.fondo_negro p {
+  font-size: 400%;
+  text-align: center;
+  color: white;
+  padding-top: 30px;
+  font-family: 'Ephesis', cursive;
+  font-size: 90px;
+}
+
+/* ABOUT ME PAGES */
+
+.languages{
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
+  margin-top: 30px;
+  word-wrap: break-word;
+  
+}
+
+.languages > div {
+  width: 80%;
+  font-size: 25px;
+}
+
+.logo{
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.flechas {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin-top: 30px;
+  
+}
+
+.flecha_abajo{
+  width: 50px;
+  cursor: pointer;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+.line {
+  border: solid 2px #1fa0d3;
+  border-style: dashed;
+  width: 260px;
+  height: 0px;
+  margin-top: 20px;
+  
+}
+
+.contenedor_title{
+  display: flex;
+  justify-content: space-evenly;
+  
+}
+
+.title_project{
+  padding: 10px;
+  border-top: solid #1fa0d3 3px;
+  border-bottom: solid #1fa0d3 3px;
+  width: 80%;
+  text-align: center;
+  font-size: 30px;
+  font-family: monospace;
+}
+
+.used_project {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  align-items: center;
+  margin-bottom: 30px;
+  margin-left: 90px;
+  margin-right: 90px;
+  
+}
+
+.elements {
+  
+  word-wrap: break-word;
+  padding: 15px;
+  background-color: #20dad8;
+  border-radius: 10px;
+  margin-top: 30px;
+  border: solid black 2px;
+  cursor: pointer;
+}
+
+.ele_title{
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 26px;
+}
+
+.link_conte p{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: white;
+  font-size: 25px;
+  word-wrap: break-word;
+}
+
+.link_conte a {
+  text-decoration: none;
+  cursor: pointer;
+  padding: 6px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.link_conte div {
+  margin-top: 30px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.link_conte a::before{
+  content: "\027a4";
+  margin-right: 5px;
+}
+
+.link_conte span {
+  cursor: pointer;
+  
+}
+
+.cerrar {
+  text-align: end;
+}
+
+.info {
+  position: absolute;
+  padding: 20px;
+  background-color: hsla(0, 100%, 0%, 0.9);
+  top: 10%;
+  left: 20%;
+  border-radius: 10px;
+  width: 760px;
+}
+
+.info img {
+  border-radius: 10px;
+  width: 700px;
+}
+
+footer {
+  background-color: black;
+  width: 100%;
+  color: white;
+  padding: 10px;
+  position: fixed;
+  bottom: 0px;
+  display: flex;
+  
+}
+
+footer a{
+  text-decoration: none;
+  color: white;
+  margin-left: 60%;
+}
+
+@media screen and (min-width: 2000px){
+  
+  .video video {
+    width: 2000px;
+    height: 1500px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .video {
+    margin-top: 1px;
+    margin-left: 180px;
+  }
+  
+  .fondo_negro {
+
+    width: 2000px;
+    height: 1120px;
+    top: 284px;
+    left: 180px;
+
+  }
+
+  .fondo_negro p {
+    font-size: 400%;
+    text-align: center;
+    color: white;
+    padding-top: 30px;
+    font-family: 'Ephesis', cursive;
+    font-size: 160px;
+  }
+
+  header {
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    padding: 16px;
+    font-size: 30px;
+  }
+
+  .menu{
+    width: 520px;
+    margin-left: 850px;
+  }
+
+  .menu a{
+    width: 120px;
+  }
+
+  footer a, footer {
+    font-size: 35px;
+  }
+}
+
+@media screen and (max-width:450px) {
+
+  .video video {
+    width: 400px;
+    height: 300px;
+  }
+
+  .video {
+    margin-top: 4px;
+    margin-left: 10px;
+  }
+  
+  .fondo_negro {
+
+    width: 400px;
+    height: 228px;
+    top: 140px;
+    left: 10px;
+
+  }
+
+  .fondo_negro p {
+    font-size: 400%;
+    text-align: center;
+    color: white;
+    padding-top: 10px;
+    font-family: 'Ephesis', cursive;
+    font-size: 35px;
+    
+  }
+
+  header {
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    padding: 16px;
+    
+  }
+
+  .menu{
+    width: 520px;
+    margin-left: 2px;
+  }
+
+  .menu a{
+    width: 120px;
+  }
+
+  .used_project {
+    display: grid;
+    grid-template-columns: 1fr ;
+    align-items: center;
+    margin-bottom: 30px;
+    margin-left: 90px;
+    margin-right: 90px;
+    
+  }
+  
+}
+
+@media screen and (max-width:330px) {
+  .video video {
+    width: 300px;
+    height: 300px;
+  }
+
+  .video {
+    margin-top: 3px;
+    margin-left: 10px;
+  }
+  
+  .fondo_negro {
+
+    width: 300px;
+    height: 170px;
+    top: 167px;
+    left: 10px;
+
+  }
+
+  .fondo_negro p {
+    font-size: 400%;
+    text-align: center;
+    color: white;
+    padding-top: 10px;
+    font-family: 'Ephesis', cursive;
+    font-size: 35px;
+    
+  }
+
+  header {
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    padding: 16px;
+    
+  }
+
+  .menu{
+    width: 520px;
+    margin-left: 2px;
+  }
+
+  .menu a{
+    width: 120px;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+
+  .used_project {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+  }
+
+  .elements {
+    margin-top: 20px;
+    width: 100%;
+  }
+
+  .used_project {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    margin-bottom: 30px;
+    margin-left: 90px;
+    margin-right: 90px;
+    
+  }
+
+  footer a {
+    margin-left: 0%;
   }
 }
