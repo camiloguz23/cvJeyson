@@ -7,11 +7,7 @@ import About from './paginas/about/about';
 function App() {
   return (
     <>
-    <Router>
-      <Switch>
-        <Route exact path="/cvJeyson" component={Inicio}/>
-      </Switch>
-    </Router>
+    <Inicio />
 
     <Router>
       <Switch>
