@@ -1,4 +1,5 @@
 import React from 'react';
+import pdf from './documents/jeyson_CV.pdf'
 
 
 const Footer = () => {
@@ -6,7 +7,7 @@ const Footer = () => {
         <>
         <footer>
             <p>Jeyson Camilo Guzman Rico</p>
-            <a href="./documents/jeyson_CV.pdf" download="CV_JEYSON">Dowload CV by Jeyson Guzman</a>
+            <a href={pdf} download="CV_JEYSON">Dowload CV by Jeyson Guzman</a>
         </footer>
         </>
      );
